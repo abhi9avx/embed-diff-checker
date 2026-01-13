@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-900 text-gray-100 antialiased;
+  /* background-image set via inline style or separate class usually, but here we can try importing if using postcss-import or just putting it in public */
+  /* Vite handles relative paths in CSS if in src */
+  background-image: url('./assets/background.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}

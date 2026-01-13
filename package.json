@@ -1,0 +1,17 @@
+{
+    "name": "embed-diff-root",
+    "version": "1.0.0",
+    "description": "Root orchestrator for embed-diff",
+    "scripts": {
+        "postinstall": "cd server && npm install && cd ../client && npm install",
+        "start": "cd server && npm start",
+        "client": "cd client && npm run dev",
+        "dev": "concurrently \"npm run start\" \"npm run client\""
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "concurrently": "^8.2.2"
+    }
+}

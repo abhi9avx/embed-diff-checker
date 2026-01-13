@@ -1,0 +1,55 @@
+# Dependencies
+node_modules/
+
+# (Optional: Keep package-lock.json if you want to lock versions, but sometimes people ignore it. 
+# Standard practice is to KEEP it, but some users ask to ignore. I will keep it in git by NOT adding it here, 
+# but I added node_modules which is critical.)
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build outputs
+/dist
+/build
+/out
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs
+*.log
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Testing
+coverage/
+
+# Misc
+embed-diff-checker/ # The folder I just created per request, if it's meant to be temporary or separate? 
+# Actually user asked to make a folder, presumably for code? 
+# If it's part of the project, don't ignore it. I will NOT ignore embed-diff-checker.
+
+# Client specific
+client/dist/
+client/.eslintcache
+
+# Server specific
+server/models/ # If there were generated models? (None yet)
