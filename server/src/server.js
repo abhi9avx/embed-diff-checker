@@ -10,6 +10,11 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json({ limit: '10kb' }));
 app.use(cors());
 
+// Health check endpoint
+app.get('/', (req, res) => {
+    res.send('Embed Diff Checker API is running. use POST /compare to access the API.');
+});
+
 // Pure math utility for cosine similarity
 function calculateCosineSimilarity(vecA, vecB) {
     const dotProduct = vecA.reduce((sum, a, i) => sum + a * vecB[i], 0);
